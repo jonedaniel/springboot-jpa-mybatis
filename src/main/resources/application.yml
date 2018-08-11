@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    platform: mysql
+    url: jdbc:mysql:///test?useUnicode=true&amp;characterEncoding=UTF-8
+    username: root
+    password: admin
+    type: com.alibaba.druid.pool.DruidDataSource
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+logging:
+  level:
+    root: warn
+    org:
+      hibernate: warn
